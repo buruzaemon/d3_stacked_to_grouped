@@ -17,3 +17,14 @@ relation to the others.
 
 Toggling from stacked to grouped, the total populations for each state are now
 broken out into their separate age group categories. 
+
+## Features
+
+* [d3.scaleBand](https://github.com/d3/d3-scale/blob/master/README.md#scaleBand)
+  for dynamically adjusting the width of the bars
+* [d3.scaleLinear](https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear)
+  for automatically scaling the bar heights
+* [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#scaleOrdinal)
+  for setting the categorical color pallete for each age group
+* [d3.csv](https://github.com/d3/d3-request/blob/master/README.md#csv) to
+  handle the comma-separated value data

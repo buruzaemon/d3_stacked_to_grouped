@@ -38,8 +38,8 @@ var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 
 var colorScale = d3.scaleOrdinal()
-//   .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
    .range(["#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"]);
+//   .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 //   .range(["#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#bd0026"]);
 
 var columns,
@@ -50,8 +50,6 @@ var columns,
 	yStackMax,
 	rect;
     
-//var stack = d3.stack();
-
 d3.csv("data.csv", addTotalsColumn, function(error, data) {
   if (error) throw error;
 
@@ -108,38 +106,11 @@ d3.csv("data.csv", addTotalsColumn, function(error, data) {
   rect.append("svg:title")
       .text(function(d) { return d.state+", "+d.ageGroup+": "+d.y+" (total: "+d.total+")"; });
 
-  /*
-  g.selectAll(".serie")
-    .data(stack.keys(data.columns.slice(1))(data))
-    .enter().append("g")
-      .attr("class", "serie")
-      .attr("fill", function(d) { return colorScale(d.key); })
-    .selectAll("rect")
-    .data(function(d) { return d; })
-    .enter().append("rect")
-      .attr("x", function(d) { return x(d.data.State); })
-      .attr("y", function(d) { return y(d[1]); })
-      .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-      .attr("width", x.bandwidth());
-      */
-
   g.append("g")
       .attr("class", "axis axis--x")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
-  /*  	  
-  g.append("g")
-      .attr("class", "axis axis--y")
-      .call(d3.axisLeft(y).ticks(10, "s"))
-    .append("text")
-      .attr("x", 2)
-      .attr("y", y(y.ticks(10).pop()))
-      .attr("dy", "0.35em")
-      .attr("text-anchor", "start")
-      .attr("fill", "#000")
-      .text("Population");
-  */
   
   svg.append("text")
      .attr("class", "axis axis--x")
