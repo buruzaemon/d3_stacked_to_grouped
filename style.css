@@ -1,0 +1,41 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.outer {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.inner {
+  width: 960px;
+  border: solid #d9d9d9 1px;
+}
+
+.controls {
+  float: right;
+  margin-top: 10px;
+  margin-right: 38px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.axis {
+  font-size: 14px;
+}
+
+.tick  {
+  font-size: 8px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.axis path {
+  display: none;
+}
+
+.legend {
+  font-size: 11px;
+}
