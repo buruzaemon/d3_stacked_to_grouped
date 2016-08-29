@@ -6,14 +6,14 @@ this [older example from Mike Bostock for d3.js v3](https://bl.ocks.org/mbostock
 
 ## Stacked view
 
-![](https://raw.githubusercontent.com/buruzaemon/d3_stacked_to_grouped/master/stacked.png)
+![stacked bars](https://raw.githubusercontent.com/buruzaemon/d3_stacked_to_grouped/master/stacked.png)
 
 The age groups for each US state are stacked up to show the total population in
 relation to the others.
 
 ## Grouped view
 
-![](https://raw.githubusercontent.com/buruzaemon/d3_stacked_to_grouped/master/grouped.png)
+![grouped bars](https://raw.githubusercontent.com/buruzaemon/d3_stacked_to_grouped/master/grouped.png)
 
 Toggling from stacked to grouped, the total populations for each state are now
 broken out into their separate age group categories. 
@@ -25,6 +25,6 @@ broken out into their separate age group categories.
 * [d3.scaleLinear](https://github.com/d3/d3-scale/blob/master/README.md#scaleLinear)
   for automatically scaling the bar heights
 * [d3.scaleOrdinal](https://github.com/d3/d3-scale/blob/master/README.md#scaleOrdinal)
-  for setting the categorical color pallete for each age group
+  for setting the [sequential, multi-hued color pallete](http://colorbrewer2.org/#type=sequential&scheme=GnBu&n=9) representing each age group
 * [d3.csv](https://github.com/d3/d3-request/blob/master/README.md#csv) to
   handle the comma-separated value data

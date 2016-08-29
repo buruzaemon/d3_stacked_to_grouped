@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
@@ -9,9 +8,9 @@
   <h2>Population by age group across US states</h2>
   <div class="inner">
 	<div class="controls">
-	  <form title="toggle bar chart between grouped and stacked views">
-		<label><input id="toggleGrouped" type="radio" name="mode" value="grouped"> Grouped</label>
+	  <form title="toggle bar chart between stacked and grouped views">
 		<label><input id="toggleStacked" type="radio" name="mode" value="stacked" checked> Stacked</label>
+		<label><input id="toggleGrouped" type="radio" name="mode" value="grouped"> Grouped</label>
 	  </form>
     </div>
 	<div class="graph">
@@ -38,9 +37,7 @@ var y = d3.scaleLinear()
     .rangeRound([height, 0]);
 
 var colorScale = d3.scaleOrdinal()
-   .range(["#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"]);
-//   .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-//   .range(["#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a", "#e31a1c", "#bd0026"]);
+   .range(["#ccebc5", "#a8ddb5", "#7bccc4", "#4eb3d3", "#2b8cbe", "#0868ac", "#084081"]);
 
 var columns,
     numStates,
