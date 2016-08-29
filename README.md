@@ -14,5 +14,5 @@ relation to the others.
 
 ![](https://raw.githubusercontent.com/buruzaemon/d3_stacked_to_grouped/master/grouped.png)
 
-The total populations for each state are now broken out into their separate age group
-categories. 
+Toggling from stacked to grouped, the total populations for each state are now
+broken out into their separate age group categories. 
