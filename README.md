@@ -25,13 +25,13 @@ are re-scaled so that the bar for each age group of a state will evenly take up
 a fraction of the state's alloted band.
 
 
-## Staged animation
+## Staged-transition animation
 
-Animations transition from stacked to group bars. The transitions are staged
-from x- to y-axis when going from stacked to grouped; and from y- to x-axis
-when going from grouped to stacked. This staged transition preserves object 
-constancy, so the viewer maintains a sense of what the bar heights and widths
-mean throughout the animation.
+Animations transition between layouts for stacked and grouped bars. The
+transitions are staged from x- to y-axis when going from stacked to grouped;
+and from y- to x-axis when going from grouped to stacked. This staged
+transition preserves object constancy, so the viewer maintains a sense of what
+the bar heights and widths mean throughout the animation.
 
 
 ## Features
